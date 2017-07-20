@@ -1,8 +1,7 @@
 'use strict';
 
-import React, {
-  PropTypes,
-} from 'react';
+import {PropTypes} from 'react';
+import createReactClass from 'create-react-class';
 import {
   ScrollView,
   StyleSheet,
@@ -16,7 +15,8 @@ type DefaultProps = {
   renderScrollComponent: (props: Object) => ReactElement;
 };
 
-let InvertibleScrollView = React.createClass({
+let InvertibleScrollView = createReactClass({
+  displayName: 'InvertibleScrollView',
   mixins: [ScrollableMixin],
 
   propTypes: {
