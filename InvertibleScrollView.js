@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import ScrollableMixin from 'react-native-scrollable-mixin';
-
+import React from 'react';
 import cloneReferencedElement from 'react-clone-referenced-element';
 
 type DefaultProps = {
